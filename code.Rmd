@@ -1,0 +1,49 @@
+---
+title: "RStudio Instructor Training"
+author: "Adithi R. Upadhya"
+date: "22/02/2022"
+output: html_notebook
+---
+
+```{r setup, include = FALSE, message = FALSE, warning = FALSE}
+# if tidyverse is not installed 
+# install.packages("tidyverse")
+# if already installed 
+library(tidyverse)
+```
+
+# Check your data called band_members, band_instruments and band_instruments2
+
+```{r message = FALSE, warning = FALSE}
+?band_members
+glimpse(band_members)
+```
+
+
+```{r message = FALSE, warning = FALSE}
+?band_instruments
+glimpse(band_instruments) 
+```
+
+```{r message = FALSE, warning = FALSE}
+?band_instruments2
+glimpse(band_instruments2)
+```
+
+```{r message = FALSE, warning = FALSE}
+band_instruments %>% 
+  inner_join(., band_members, by = "name") 
+```
+
+
+```{r message = FALSE, warning = FALSE}
+band_instruments %>% 
+  inner_join(., band_members, by = c("name" = "name")) 
+```
+
+
+
+```{r message = FALSE, warning = FALSE}
+band_instruments %>% 
+  left_join(., band_members, by = "name") 
+```

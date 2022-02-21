@@ -1,0 +1,48 @@
+---
+title: "Mutating Joins in R"
+subtitle: "Using Tidyverse"
+author: "Adithi R. Upadhya"
+institute: "ILK Labs"
+date: "2022/02/22"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true 
+      countIncrementalSlides: false
+---
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(palmerpenguins)
+library(tidyverse)
+```
+class: inverse, center, middle
+
+# Introduction
+       - Adithi R. Upadhya
+--
+       - Using R for the past 3 years
+--
+      - Background in GIS, Remote Sensing, Informatics and Physics
+--
+      - Cannot cook for herself 
+
+???
+
+
+---
+# Important links
+
+Open the below links in three different tabs in your browser
+
+ - [Slides](https://eda-in-r.netlify.app/)
+ 
+ - [A quiz to check your understanding](https://56doors.shinyapps.io/formative_assessment/)
+ 
+ - [RStudio Cloud Environment to follow along as I code](https://rstudio.cloud/project/1970032)
+
+???
+10-15 seconds
+
+Feel free to put your questions in the chat or use the raise hand function to speak and ask a question
