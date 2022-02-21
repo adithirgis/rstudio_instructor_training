@@ -38,10 +38,10 @@ band_instruments %>%
   inner_join(., band_members, by = c("name" = "name")) 
 ```
 
-### Now, using `left_join`, join band_instruments and band_members such that all the variables in join_instruments are retained
+### Now, using `left_join`, join band_instruments and band_members such that all the variables in band_instruments are retained
 
 
 ```{r message = FALSE, warning = FALSE, eval = FALSE}
 --------- %>% 
-  ---------(., band_members, by = "name") 
+  left_join(., ---------, by = "name") 
 ```

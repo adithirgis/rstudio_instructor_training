@@ -208,10 +208,10 @@ glimpse(band_members)</code></pre>
 ## 1 John  guitar Beatles
 ## 2 Paul  bass   Beatles</code></pre>
 </div>
-<div id="now-using-left_join-join-band_instruments-and-band_members-such-that-all-the-variables-in-join_instruments-are-retained" class="section level3">
-<h3>Now, using <code>left_join</code>, join band_instruments and band_members such that all the variables in join_instruments are retained</h3>
+<div id="now-using-left_join-join-band_instruments-and-band_members-such-that-all-the-variables-in-band_instruments-are-retained" class="section level3">
+<h3>Now, using <code>left_join</code>, join band_instruments and band_members such that all the variables in band_instruments are retained</h3>
 <pre class="r"><code>--------- %&gt;% 
-  ---------(., band_members, by = &quot;name&quot;) </code></pre>
+  left_join(., ---------, by = &quot;name&quot;) </code></pre>
 </div>
 
 
