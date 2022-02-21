@@ -188,10 +188,9 @@ glimpse(band_members)</code></pre>
 ## $ name  &lt;chr&gt; &quot;John&quot;, &quot;Paul&quot;, &quot;Keith&quot;
 ## $ plays &lt;chr&gt; &quot;guitar&quot;, &quot;bass&quot;, &quot;guitar&quot;</code></pre>
 </div>
-<div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-the-common-observations-in-the-both-table-remain" class="section level3">
-<h3>Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain</h3>
-<pre class="r"><code>band_instruments %&gt;% 
-  inner_join(., band_members, by = &quot;name&quot;) </code></pre>
+<div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-only-the-common-observations-in-the-both-tables-remain" class="section level3">
+<h3>Using dplyr, join tables band_members and band_instruments so that only the common observations in the both tables remain</h3>
+<pre class="r"><code>inner_join(band_instruments, band_members, by = &quot;name&quot;) </code></pre>
 <pre><code>## # A tibble: 2 x 3
 ##   name  plays  band   
 ##   &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  
@@ -200,8 +199,7 @@ glimpse(band_members)</code></pre>
 </div>
 <div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-the-common-observations-in-the-both-table-remain-but-this-time-use-the-by-parameter-as-a-named-character-vector" class="section level3">
 <h3>Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the <code>by</code> parameter as a named character vector</h3>
-<pre class="r"><code>band_instruments %&gt;% 
-  inner_join(., band_members, by = c(&quot;name&quot; = &quot;name&quot;)) </code></pre>
+<pre class="r"><code>inner_join(band_instruments, band_members, by = c(&quot;name&quot; = &quot;name&quot;)) </code></pre>
 <pre><code>## # A tibble: 2 x 3
 ##   name  plays  band   
 ##   &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  
@@ -210,8 +208,7 @@ glimpse(band_members)</code></pre>
 </div>
 <div id="now-using-left_join-join-band_instruments-and-band_members-such-that-all-the-variables-in-band_instruments-are-retained" class="section level3">
 <h3>Now, using <code>left_join</code>, join band_instruments and band_members such that all the variables in band_instruments are retained</h3>
-<pre class="r"><code>--------- %&gt;% 
-  left_join(., ---------, by = &quot;name&quot;) </code></pre>
+<pre class="r"><code>left_join(---------, ---------, by = &quot;name&quot;) </code></pre>
 </div>
 
 

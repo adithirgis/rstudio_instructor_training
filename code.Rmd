@@ -5,10 +5,10 @@ date: "22/02/2022"
 output: html_document
 ---
 
-```{r setup, include = FALSE, message = FALSE, warning = FALSE}
+```{r include = FALSE, message = FALSE, warning = FALSE}
 # if tidyverse is not installed 
 # install.packages("tidyverse")
-# if already installed 
+# if already installed, load it here
 library(tidyverse)
 ```
 
@@ -24,24 +24,20 @@ glimpse(band_members)
 glimpse(band_instruments) 
 ```
 
-### Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain
+### Using dplyr, join tables band_members and band_instruments so that only the common observations in the both tables remain
 
 ```{r message = FALSE, warning = FALSE}
-band_instruments %>% 
-  inner_join(., band_members, by = "name") 
+inner_join(band_instruments, band_members, by = "name") 
 ```
 
 ### Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the `by` parameter as a named character vector
 
 ```{r message = FALSE, warning = FALSE}
-band_instruments %>% 
-  inner_join(., band_members, by = c("name" = "name")) 
+inner_join(band_instruments, band_members, by = c("name" = "name")) 
 ```
 
 ### Now, using `left_join`, join band_instruments and band_members such that all the variables in band_instruments are retained
 
-
 ```{r message = FALSE, warning = FALSE, eval = FALSE}
---------- %>% 
-  left_join(., ---------, by = "name") 
+left_join(---------, ---------, by = "name") 
 ```
