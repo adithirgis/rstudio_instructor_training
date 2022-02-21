@@ -26,7 +26,7 @@ class: inverse, center, middle
 --
       - Background in GIS, Remote Sensing, Informatics and Physics
 --
-      - Cannot cook for herself 
+      - Not a great cook 
 
 ???
 

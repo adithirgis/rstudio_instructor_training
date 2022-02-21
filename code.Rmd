@@ -2,7 +2,7 @@
 title: "RStudio Instructor Training"
 author: "Adithi R. Upadhya"
 date: "22/02/2022"
-output: html_notebook
+output: html_document
 ---
 
 ```{r setup, include = FALSE, message = FALSE, warning = FALSE}
@@ -12,38 +12,36 @@ output: html_notebook
 library(tidyverse)
 ```
 
-# Check your data called band_members, band_instruments and band_instruments2
+### Look at the first table band_members
 
 ```{r message = FALSE, warning = FALSE}
 ?band_members
 glimpse(band_members)
 ```
-
+### Look at the second table band_instruments
 
 ```{r message = FALSE, warning = FALSE}
-?band_instruments
 glimpse(band_instruments) 
 ```
 
-```{r message = FALSE, warning = FALSE}
-?band_instruments2
-glimpse(band_instruments2)
-```
+### Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain
 
 ```{r message = FALSE, warning = FALSE}
 band_instruments %>% 
   inner_join(., band_members, by = "name") 
 ```
 
+### Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the `by` parameter as a named character vector
 
 ```{r message = FALSE, warning = FALSE}
 band_instruments %>% 
   inner_join(., band_members, by = c("name" = "name")) 
 ```
 
+### Now, using `left_join`, join band_instruments and band_members such that all the variables in join_instruments are retained
 
 
-```{r message = FALSE, warning = FALSE}
-band_instruments %>% 
-  left_join(., band_members, by = "name") 
+```{r message = FALSE, warning = FALSE, eval = FALSE}
+--------- %>% 
+  ---------(., band_members, by = "name") 
 ```
