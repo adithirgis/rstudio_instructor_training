@@ -30,14 +30,19 @@ glimpse(band_instruments)
 inner_join(band_instruments, band_members, by = "name") 
 ```
 
-### Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the `by` parameter as a named character vector
 
 ```{r message = FALSE, warning = FALSE}
-inner_join(band_instruments, band_members, by = c("name" = "name")) 
+inner_join(band_members, band_instruments, by = c("name" = "name")) 
 ```
 
 ### Now, using `left_join`, join band_instruments and band_members such that all the variables in band_instruments are retained
 
 ```{r message = FALSE, warning = FALSE, eval = FALSE}
 left_join(---------, ---------, by = "name") 
+```
+
+### Solution
+
+```{r message = FALSE, warning = FALSE}
+left_join(band_instruments, band_members, by = "name") 
 ```
