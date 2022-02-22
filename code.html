@@ -171,8 +171,8 @@ pre code {
 </div>
 
 
-<div id="look-at-the-first-table-band_members" class="section level3">
-<h3>Look at the first table band_members</h3>
+<div id="look-at-the-first-table-band_members" class="section level4">
+<h4>Look at the first table band_members</h4>
 <pre class="r"><code>?band_members
 glimpse(band_members)</code></pre>
 <pre><code>## Rows: 3
@@ -180,16 +180,16 @@ glimpse(band_members)</code></pre>
 ## $ name &lt;chr&gt; &quot;Mick&quot;, &quot;John&quot;, &quot;Paul&quot;
 ## $ band &lt;chr&gt; &quot;Stones&quot;, &quot;Beatles&quot;, &quot;Beatles&quot;</code></pre>
 </div>
-<div id="look-at-the-second-table-band_instruments" class="section level3">
-<h3>Look at the second table band_instruments</h3>
+<div id="look-at-the-second-table-band_instruments" class="section level4">
+<h4>Look at the second table band_instruments</h4>
 <pre class="r"><code>glimpse(band_instruments) </code></pre>
 <pre><code>## Rows: 3
 ## Columns: 2
 ## $ name  &lt;chr&gt; &quot;John&quot;, &quot;Paul&quot;, &quot;Keith&quot;
 ## $ plays &lt;chr&gt; &quot;guitar&quot;, &quot;bass&quot;, &quot;guitar&quot;</code></pre>
 </div>
-<div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-only-the-common-observations-in-the-both-tables-remain" class="section level3">
-<h3>Using dplyr, join tables band_members and band_instruments so that only the common observations in the both tables remain</h3>
+<div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-only-the-common-observations-in-the-both-tables-remain-using-the-key-as-name-column" class="section level4">
+<h4>Using dplyr, join tables band_members and band_instruments so that only the common observations in the both tables remain using the key as <code>name</code> column</h4>
 <pre class="r"><code>inner_join(band_instruments, band_members, by = &quot;name&quot;) </code></pre>
 <pre><code>## # A tibble: 2 x 3
 ##   name  plays  band   
@@ -197,8 +197,8 @@ glimpse(band_members)</code></pre>
 ## 1 John  guitar Beatles
 ## 2 Paul  bass   Beatles</code></pre>
 </div>
-<div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-the-common-observations-in-the-both-table-remain-but-this-time-use-the-by-parameter-as-a-named-character-vector-and-also-interchanged-dataframes-order" class="section level3">
-<h3>Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the <code>by</code> parameter as a named character vector and also interchanged dataframes order</h3>
+<div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-the-common-observations-in-the-both-table-remain-but-this-time-use-the-by-parameter-as-a-named-character-vector-and-also-interchanged-dataframes-order-by-which-they-are-called" class="section level4">
+<h4>Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the <code>by</code> parameter as a named character vector and also interchanged dataframes order by which they are called</h4>
 <pre class="r"><code>inner_join(band_members, band_instruments, by = c(&quot;name&quot; = &quot;name&quot;)) </code></pre>
 <pre><code>## # A tibble: 2 x 3
 ##   name  band    plays 
@@ -206,9 +206,12 @@ glimpse(band_members)</code></pre>
 ## 1 John  Beatles guitar
 ## 2 Paul  Beatles bass</code></pre>
 </div>
-<div id="now-using-left_join-join-band_instruments-and-band_members-such-that-all-the-variables-in-band_instruments-are-retained" class="section level3">
-<h3>Now, using <code>left_join</code>, join band_instruments and band_members such that all the variables in band_instruments are retained</h3>
+<div id="knowledge-check" class="section level2">
+<h2>Knowledge Check</h2>
+<div id="now-using-left_join-join-band_instruments-and-band_members-such-that-all-the-variables-in-band_instruments-are-retained" class="section level4">
+<h4>Now, using <code>left_join</code>, join band_instruments and band_members such that all the variables in band_instruments are retained</h4>
 <pre class="r"><code>left_join(---------, ---------, by = &quot;name&quot;) </code></pre>
+</div>
 </div>
 
 
