@@ -14,7 +14,7 @@ Materials for the RStudio Teaching Exam.
 
 ## Learner Persona
 
-### Meet Geetha
+### Meet Geetha (she/her)
 
 -   Geetha is a recent ecology graduate and currently an independent ecologist who wants to do analysis and field work on her own.
 -   She has a solid foundation of the field knowledge and has satisfactory statistical knowledge. She works with Excel, and other interface tools.
