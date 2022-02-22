@@ -1,4 +1,4 @@
-# RStudio Instructor Training
+# RStudio Instructor Training 2022
 
 Materials for the RStudio Teaching Exam.
 
