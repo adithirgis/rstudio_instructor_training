@@ -206,9 +206,15 @@ glimpse(band_members)</code></pre>
 ## 1 John  Beatles guitar
 ## 2 Paul  Beatles bass</code></pre>
 </div>
-<div id="now-using-left_join-join-band_instruments-and-band_members-such-that-all-the-variables-in-band_instruments-are-retained" class="section level3">
-<h3>Now, using <code>left_join</code>, join band_instruments and band_members such that all the variables in band_instruments are retained</h3>
-<pre class="r"><code>left_join(---------, ---------, by = &quot;name&quot;) </code></pre>
+<div id="now-using-left_join-join-band_instruments-and-band_members-such-that-all-the-variables-in-band_instruments-are-retained---solution" class="section level3">
+<h3>Now, using <code>left_join</code>, join band_instruments and band_members such that all the variables in band_instruments are retained - Solution</h3>
+<pre class="r"><code>left_join(band_instruments, band_members, by = &quot;name&quot;) </code></pre>
+<pre><code>## # A tibble: 3 x 3
+##   name  plays  band   
+##   &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  
+## 1 John  guitar Beatles
+## 2 Paul  bass   Beatles
+## 3 Keith guitar &lt;NA&gt;</code></pre>
 </div>
 
 
