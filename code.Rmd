@@ -27,13 +27,13 @@ glimpse(band_instruments)
 #### Using dplyr, join tables band_members and band_instruments so that only the common observations in the both tables remain using the key as `name` column
 
 ```{r message = FALSE, warning = FALSE}
-inner_join(band_instruments, band_members, by = "name") 
+inner_join(band_instruments, band_members, by = "name")
 ```
 
 #### Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the `by` parameter as a named character vector and also interchanged dataframes order by which they are called
 
 ```{r message = FALSE, warning = FALSE}
-inner_join(band_members, band_instruments, by = c("name" = "name")) 
+inner_join(band_members, band_instruments, by = c("name" = "name"))
 ```
 
 ## Knowledge Check

@@ -190,7 +190,7 @@ glimpse(band_members)</code></pre>
 </div>
 <div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-only-the-common-observations-in-the-both-tables-remain-using-the-key-as-name-column" class="section level4">
 <h4>Using dplyr, join tables band_members and band_instruments so that only the common observations in the both tables remain using the key as <code>name</code> column</h4>
-<pre class="r"><code>inner_join(band_instruments, band_members, by = &quot;name&quot;) </code></pre>
+<pre class="r"><code>inner_join(band_instruments, band_members, by = &quot;name&quot;)</code></pre>
 <pre><code>## # A tibble: 2 x 3
 ##   name  plays  band   
 ##   &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  
@@ -199,7 +199,7 @@ glimpse(band_members)</code></pre>
 </div>
 <div id="using-dplyr-join-tables-band_members-and-band_instruments-so-that-the-common-observations-in-the-both-table-remain-but-this-time-use-the-by-parameter-as-a-named-character-vector-and-also-interchanged-dataframes-order-by-which-they-are-called" class="section level4">
 <h4>Using dplyr, join tables band_members and band_instruments so that the common observations in the both table remain, but this time, use the <code>by</code> parameter as a named character vector and also interchanged dataframes order by which they are called</h4>
-<pre class="r"><code>inner_join(band_members, band_instruments, by = c(&quot;name&quot; = &quot;name&quot;)) </code></pre>
+<pre class="r"><code>inner_join(band_members, band_instruments, by = c(&quot;name&quot; = &quot;name&quot;))</code></pre>
 <pre><code>## # A tibble: 2 x 3
 ##   name  band    plays 
 ##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; 
