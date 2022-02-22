@@ -10,6 +10,15 @@ Materials for the RStudio Teaching Exam.
 
 ## Formative Assessment as R Markdown files
 
+#### Prerequiites 
+
+```{r}
+#if tidyverse is not installed 
+install.packages("tidyverse")
+# if already installed, load it here
+library(tidyverse)
+```
+
 #### [Code](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code.Rmd)
 
 #### [Code with solution](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code_solution.Rmd)
