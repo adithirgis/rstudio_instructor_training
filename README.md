@@ -10,7 +10,7 @@ Materials for the RStudio Teaching Exam.
 
 ## Formative Assessment
 
-#### [Code](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code.Rmd)
+#### [Code with solution](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code.Rmd)
 
 ## Learner Persona
 
