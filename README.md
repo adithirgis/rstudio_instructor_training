@@ -6,22 +6,22 @@ Materials for the RStudio Teaching Exam.
 
 ## Slides
 
-#### [Can be found here.](https://docs.google.com/presentation/d/1jCAd8P1eM95nmtVICUGFEzP08NQb5mSBAow2R15tSxQ/edit#slide=id.g1147414b3bf_0_352)
+### [Can be found here.](https://docs.google.com/presentation/d/1jCAd8P1eM95nmtVICUGFEzP08NQb5mSBAow2R15tSxQ/edit#slide=id.g1147414b3bf_0_352)
 
 ## Formative Assessment as R Markdown files
 
-#### Prerequisite 
+### Prerequisite 
 
 ```{r}
-#if tidyverse is not installed 
+# if tidyverse is not installed 
 install.packages("tidyverse")
 # if already installed, load it here
 library(tidyverse)
 ```
 
-#### [Code](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code.Rmd)
+### [Code](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code.Rmd)
 
-#### [Code with solution](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code_solution.Rmd)
+### [Code with solution](https://github.com/adithirgis/rstudio_instructor_training/blob/main/code_solution.Rmd)
 
 ## Learner Persona
 
