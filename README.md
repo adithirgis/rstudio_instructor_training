@@ -10,7 +10,7 @@ Materials for the RStudio Teaching Exam.
 
 ## Formative Assessment as R Markdown files
 
-#### Prerequiites 
+#### Prerequisite 
 
 ```{r}
 #if tidyverse is not installed 
